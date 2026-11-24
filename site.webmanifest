@@ -1,0 +1,22 @@
+{
+  "name": "Faso Équipement Paalga",
+  "short_name": "FEP",
+  "description": "Équipements agricoles, solaires, miniers et hydrauliques, forages d'eau et véhicules neufs à Ouagadougou, Burkina Faso.",
+  "lang": "fr",
+  "start_url": "./",
+  "display": "browser",
+  "background_color": "#FFFFFF",
+  "theme_color": "#0E2A40",
+  "icons": [
+    {
+      "src": "logo/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "logo/icone-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

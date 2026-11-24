@@ -1,0 +1,116 @@
+/* ============ Faso Équipement Paalga — feuille de style source ============
+   Compilée par Tailwind vers assets/css/site.css (npm run build).
+   Angles droits partout (sauf le bouton WhatsApp flottant). */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bleu: #408FC8;
+    --bleu-fonce: #1F5F8F;
+    --bleu-nuit: #0E2A40;
+    --jaune: #F3B73F;
+    --jaune-fonce: #D99A1E;
+  }
+  [v-cloak] { display: none !important; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  img { max-width: 100%; }
+  :focus-visible { outline: 3px solid var(--jaune); outline-offset: 2px; }
+}
+
+@layer components {
+  /* ---------- Boutons ---------- */
+  .btn {
+    display: inline-flex; align-items: center; gap: .5rem;
+    padding: .95rem 1.6rem;
+    font-weight: 700; font-size: .8rem; line-height: 1.2;
+    text-transform: uppercase; letter-spacing: .08em;
+    border: 2px solid transparent;
+    transition: background-color .2s ease, color .2s ease, border-color .2s ease;
+  }
+  .btn-jaune { background: var(--jaune); color: var(--bleu-nuit); border-color: var(--jaune); }
+  .btn-jaune:hover { background: var(--bleu-nuit); color: #fff; border-color: var(--bleu-nuit); }
+  .btn-nuit { background: var(--bleu-nuit); color: #fff; border-color: var(--bleu-nuit); }
+  .btn-nuit:hover { background: var(--bleu); border-color: var(--bleu); }
+  .btn-contour-nuit { border-color: var(--bleu-nuit); color: var(--bleu-nuit); }
+  .btn-contour-nuit:hover { background: var(--bleu-nuit); color: #fff; }
+  .btn-contour-blanc { border-color: rgba(255,255,255,.7); color: #fff; }
+  .btn-contour-blanc:hover { background: #fff; color: var(--bleu-nuit); }
+  .btn-whatsapp { background: #1EA952; color: #fff; border-color: #1EA952; }
+  .btn-whatsapp:hover { background: #178A43; border-color: #178A43; }
+
+  .lien-fleche {
+    display: inline-flex; align-items: center; gap: .75rem;
+    font-weight: 700; font-size: .8rem; text-transform: uppercase; letter-spacing: .12em;
+    color: var(--bleu-fonce);
+  }
+  .lien-fleche::after { content: ""; width: 2rem; height: 2px; background: var(--jaune); transition: width .3s ease; }
+  .lien-fleche:hover::after { width: 3.5rem; }
+
+  /* ---------- Navigation ---------- */
+  .nav-link { position: relative; display: flex; align-items: center; padding: 0 1rem; transition: color .2s; }
+  .nav-link::after {
+    content: ""; position: absolute; left: 1rem; right: 1rem; bottom: 0; height: 4px; background: var(--jaune);
+    transform: scaleX(0); transform-origin: left; transition: transform .3s ease;
+  }
+  .nav-link:hover, .nav-active { color: var(--bleu); }
+  .nav-link:hover::after, .nav-active::after { transform: scaleX(1); }
+
+  /* ---------- Titres ---------- */
+  .eyebrow { color: var(--bleu-fonce); font-weight: 700; font-size: .75rem; text-transform: uppercase; letter-spacing: .25em; margin-bottom: .9rem; }
+  .titre-section { color: var(--bleu-nuit); font-weight: 800; line-height: 1.1; font-size: clamp(1.75rem, 3.5vw, 2.75rem); }
+  .titre-footer { color: #fff; font-weight: 700; font-size: .75rem; text-transform: uppercase; letter-spacing: .2em; margin-bottom: 1rem; }
+
+  /* ---------- Diaporama ---------- */
+  .slide-arrow {
+    width: 3rem; height: 3rem; display: flex; align-items: center; justify-content: center;
+    background: rgba(255,255,255,.08); color: #fff; transition: background .2s, color .2s;
+  }
+  .slide-arrow:hover { background: var(--jaune); color: var(--bleu-nuit); }
+
+  /* ---------- Formulaire ---------- */
+  .champ {
+    width: 100%; padding: .85rem 1rem; background: #fff; border: 1px solid #CBD5E1;
+    color: var(--bleu-nuit); font-size: 1rem; border-radius: 0;
+    transition: border-color .2s, box-shadow .2s;
+  }
+  .champ:focus { outline: none; border-color: var(--bleu); box-shadow: inset 0 -3px 0 var(--jaune); }
+  .champ-erreur { border-color: #B91C1C; }
+  .etiquette { display: block; margin-bottom: .4rem; font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; color: var(--bleu-nuit); }
+
+  /* ---------- Divers ---------- */
+  .social { width: 2.5rem; height: 2.5rem; display: inline-flex; align-items: center; justify-content: center; background: rgba(255,255,255,.08); transition: background .2s, color .2s; }
+  .social:hover { background: var(--jaune); color: var(--bleu-nuit); }
+  .carte { border: 0; filter: grayscale(100%); transition: filter .5s ease; }
+  .carte:hover { filter: none; }
+}
+
+/* ---------- Animations ---------- */
+.kenburns { animation: kenburns 7s ease-out forwards; }
+@keyframes kenburns { from { transform: scale(1.12); } to { transform: scale(1); } }
+
+.slide-in > * { animation: slideIn .9s ease both; }
+.slide-in > *:nth-child(2) { animation-delay: .15s; }
+.slide-in > *:nth-child(3) { animation-delay: .3s; }
+.slide-in > *:nth-child(4) { animation-delay: .45s; }
+@keyframes slideIn { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
+
+.progress { animation: progress 6s linear forwards; }
+.progress.paused { animation-play-state: paused; }
+@keyframes progress { from { width: 0; } to { width: 100%; } }
+
+/* Effet de filtre : noir et blanc → couleur au survol */
+.filtre-domaine { filter: grayscale(100%) contrast(1.05) brightness(.85); transition: filter .6s ease, transform .8s ease; }
+.group:hover .filtre-domaine, .group:focus-visible .filtre-domaine { filter: grayscale(0) contrast(1.05) saturate(1.1) brightness(1); transform: scale(1.06); }
+@media (hover: none) { .filtre-domaine { filter: none; } }
+
+.reveal { opacity: 0; transform: translateY(30px); transition: opacity .8s ease, transform .8s ease; }
+.reveal.visible { opacity: 1; transform: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+  .reveal { opacity: 1; transform: none; }
+  .progress { width: 100%; }
+}
