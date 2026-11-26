@@ -340,11 +340,12 @@ function intro({ id, surtitre, titre, paragraphes, points = [] }) {
 </section>`;
 }
 
-function carteProduit({ nom, image, alt, texte }, bouton = 'Demander un devis') {
+function carteProduit({ nom, image, alt, texte, credit }, bouton = 'Demander un devis') {
   return `
 <article class="group flex flex-col bg-white border border-slate-200 hover:border-bleu transition" v-reveal>
   <div class="relative aspect-[4/3] overflow-hidden bg-slate-100">
-    ${img(image, alt || nom, 'w-full h-full object-cover transition duration-700 group-hover:scale-105')}
+    ${img(image, alt || nom, 'w-full h-full object-cover transition duration-700 group-hover:scale-105')}${credit ? `
+    <a href="${credit.lien}" target="_blank" rel="noopener" class="absolute right-0 top-0 z-10 bg-black/60 px-2 py-1 text-[10px] leading-none text-white/90 hover:text-jaune">${esc(credit.texte)}</a>` : ''}
     <span class="absolute left-0 bottom-0 h-1 w-12 bg-jaune transition-all duration-500 group-hover:w-full" aria-hidden="true"></span>
   </div>
   <div class="flex-1 flex flex-col p-5 sm:p-6">
@@ -512,7 +513,8 @@ ${bandeauContact()}`
 
 // ---------------------------------------------------------------- Équipements (vue d'ensemble)
 const galerieEquipements = [
-  ...DOMAINES.flatMap(d => d.produits.map(p => ({ cat: d.id, image: p.image, titre: p.nom }))),
+  // Les photos de banques d'images (banque: true) ne sont pas « notre matériel » : hors galerie
+  ...DOMAINES.flatMap(d => d.produits.filter(p => !p.banque).map(p => ({ cat: d.id, image: p.image, titre: p.nom }))),
   { cat: 'hydrauliques', image: 'images/hydrauliques/realisation-forage-eau-jaillissante.jpeg', titre: 'Forage réalisé' },
   { cat: 'miniers', image: 'images/miniers/engins-carriere-camion-pelle-chargeuse-concasseur.jpeg', titre: 'Engins de carrière' }
 ].filter((g, i, t) => t.findIndex(x => x.image === g.image) === i);

@@ -108,13 +108,14 @@ export const DOMAINES = [
     alt: 'Panneaux solaires et batteries de stockage sous abri',
     intro: "Le soleil est la ressource la plus abondante du Burkina Faso. Nous concevons et installons des systèmes solaires complets, avec stockage, pour alimenter votre maison, votre commerce, votre exploitation ou votre forage, et réduire durablement vos factures et vos coupures.",
     points: ['Étude de vos besoins en énergie', 'Installation par nos techniciens', 'Batteries lithium longue durée', 'Électricité sans carburant'],
-    // Photos « panneaux » et « batteries » : Unsplash (licence Unsplash, usage commercial libre)
+    // Photo « panneaux » : Unsplash (licence Unsplash, usage commercial libre)
+    // Photo « batteries » : Wikimedia Commons, CC BY-SA 4.0 → crédit obligatoire (champ credit)
     // https://unsplash.com/photos/solar-panels-on-green-field-513dBrMJ_5w
-    // https://unsplash.com/photos/wall-mounted-solar-power-and-energy-storage-system-7WzD2mTRWK8
     produits: [
       { nom: 'Installations solaires avec stockage', image: 'images/solaires/installation-panneaux-solaires-batteries.jpeg', alt: 'Installation solaire avec onduleur et quatre batteries', texte: "Panneaux, onduleur et batteries dimensionnés selon votre consommation, pour une électricité disponible jour et nuit." },
-      { nom: 'Panneaux solaires', image: 'images/solaires/panneaux-solaires-champ.jpeg', alt: 'Rangée de panneaux solaires photovoltaïques en plein champ', texte: "Panneaux photovoltaïques performants pour toitures, abris ou centrales au sol, adaptés au fort ensoleillement du Burkina Faso." },
-      { nom: 'Batteries lithium', image: 'images/solaires/batteries-lithium-onduleur-mural.jpeg', alt: 'Batteries lithium murales reliées à un onduleur', texte: "Batteries lithium compactes et sans entretien : plus de cycles, une recharge rapide et une longue durée de vie." }
+      { nom: 'Panneaux solaires', image: 'images/solaires/panneaux-solaires-champ.jpeg', alt: 'Rangée de panneaux solaires photovoltaïques en plein champ', banque: true, texte: "Panneaux photovoltaïques performants pour toitures, abris ou centrales au sol, adaptés au fort ensoleillement du Burkina Faso." },
+      { nom: 'Batteries lithium', image: 'images/solaires/batteries-lithium-lifepo4-700ah.jpeg', alt: 'Banc de grosses cellules lithium LiFePO4 de 700 Ah reliées par des barres de connexion', banque: true, texte: "Batteries lithium LiFePO4 de grande capacité pour le stockage solaire : sans entretien, plus de cycles et une longue durée de vie.",
+        credit: { texte: 'Photo : Yo-Co-Man, CC BY-SA 4.0', lien: 'https://commons.wikimedia.org/wiki/File:Lithium_Iron_Phosphate_LiFePO4_Cells_700Ah_in_Parallel_and_Series_and_Busbar_-_1.jpg' } }
     ]
   },
   {

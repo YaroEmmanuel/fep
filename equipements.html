@@ -234,13 +234,13 @@
   <div class="flex flex-wrap gap-px bg-slate-200 border border-slate-200 w-fit max-w-full" role="group" aria-label="Filtrer la galerie">
     <button type="button" @click="filtre = 'tous'" :aria-pressed="filtre === 'tous'"
       class="px-3 sm:px-5 py-3 text-[11px] sm:text-xs font-bold uppercase tracking-wider transition grow sm:grow-0"
-      :class="filtre === 'tous' ? 'bg-bleu text-white' : 'bg-white text-bleu-nuit hover:bg-slate-50'">Tous <span class="opacity-60">(23)</span></button>
+      :class="filtre === 'tous' ? 'bg-bleu text-white' : 'bg-white text-bleu-nuit hover:bg-slate-50'">Tous <span class="opacity-60">(21)</span></button>
     <button type="button" @click="filtre = 'agricoles'" :aria-pressed="filtre === 'agricoles'"
       class="px-3 sm:px-5 py-3 text-[11px] sm:text-xs font-bold uppercase tracking-wider transition grow sm:grow-0"
       :class="filtre === 'agricoles' ? 'bg-bleu text-white' : 'bg-white text-bleu-nuit hover:bg-slate-50'">Agricoles <span class="opacity-60">(6)</span></button>
     <button type="button" @click="filtre = 'solaires'" :aria-pressed="filtre === 'solaires'"
       class="px-3 sm:px-5 py-3 text-[11px] sm:text-xs font-bold uppercase tracking-wider transition grow sm:grow-0"
-      :class="filtre === 'solaires' ? 'bg-bleu text-white' : 'bg-white text-bleu-nuit hover:bg-slate-50'">Solaires <span class="opacity-60">(3)</span></button>
+      :class="filtre === 'solaires' ? 'bg-bleu text-white' : 'bg-white text-bleu-nuit hover:bg-slate-50'">Solaires <span class="opacity-60">(1)</span></button>
     <button type="button" @click="filtre = 'miniers'" :aria-pressed="filtre === 'miniers'"
       class="px-3 sm:px-5 py-3 text-[11px] sm:text-xs font-bold uppercase tracking-wider transition grow sm:grow-0"
       :class="filtre === 'miniers' ? 'bg-bleu text-white' : 'bg-white text-bleu-nuit hover:bg-slate-50'">Miniers <span class="opacity-60">(6)</span></button>
@@ -309,24 +309,6 @@
         <span class="absolute inset-0 flex flex-col justify-end p-3 sm:p-4 bg-gradient-to-t from-bleu-nuit/90 to-transparent opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 transition">
           <span class="text-jaune text-[10px] font-bold uppercase tracking-widest">Solaires</span>
           <span class="text-white font-semibold text-xs sm:text-sm">Installations solaires avec stockage</span>
-        </span>
-      </button>
-    </li>
-    <li v-show="filtre === 'tous' || filtre === 'solaires'" data-galerie data-src="images/solaires/panneaux-solaires-champ.jpeg" data-titre="Panneaux solaires" data-cat="Solaires" data-filtre="solaires">
-      <button type="button" @click="ouvrir('images/solaires/panneaux-solaires-champ.jpeg')" class="group relative block w-full aspect-square overflow-hidden bg-slate-200 text-left" aria-label="Agrandir la photo : Panneaux solaires">
-        <img src="images/solaires/panneaux-solaires-champ.jpeg" alt="Panneaux solaires" width="1280" height="852" loading="lazy" decoding="async" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
-        <span class="absolute inset-0 flex flex-col justify-end p-3 sm:p-4 bg-gradient-to-t from-bleu-nuit/90 to-transparent opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 transition">
-          <span class="text-jaune text-[10px] font-bold uppercase tracking-widest">Solaires</span>
-          <span class="text-white font-semibold text-xs sm:text-sm">Panneaux solaires</span>
-        </span>
-      </button>
-    </li>
-    <li v-show="filtre === 'tous' || filtre === 'solaires'" data-galerie data-src="images/solaires/batteries-lithium-onduleur-mural.jpeg" data-titre="Batteries lithium" data-cat="Solaires" data-filtre="solaires">
-      <button type="button" @click="ouvrir('images/solaires/batteries-lithium-onduleur-mural.jpeg')" class="group relative block w-full aspect-square overflow-hidden bg-slate-200 text-left" aria-label="Agrandir la photo : Batteries lithium">
-        <img src="images/solaires/batteries-lithium-onduleur-mural.jpeg" alt="Batteries lithium" width="1280" height="960" loading="lazy" decoding="async" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
-        <span class="absolute inset-0 flex flex-col justify-end p-3 sm:p-4 bg-gradient-to-t from-bleu-nuit/90 to-transparent opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 transition">
-          <span class="text-jaune text-[10px] font-bold uppercase tracking-widest">Solaires</span>
-          <span class="text-white font-semibold text-xs sm:text-sm">Batteries lithium</span>
         </span>
       </button>
     </li>
