@@ -99,15 +99,15 @@ Tracteurs, mini-tracteurs, motoculteurs, fraises rotatives, charrues, semoirs, �
 
 ### 3b. Solaires
 « Produisez votre propre énergie, sans coupure. »
-Panneaux solaires, batteries de stockage, onduleurs, pompes solaires immergées hybrides (AC/DC), étude et installation.
+Panneaux solaires, batteries lithium, onduleurs, étude et installation.
 
 ### 3c. Miniers
 « Du matériel taillé pour les conditions les plus exigeantes. »
-Concasseurs à mâchoires, concasseurs mobiles avec crible, broyeurs à boulets, convoyeurs, engins de carrière.
+Concasseurs à mâchoires, concasseurs mobiles avec crible, broyeurs à boulets, convoyeurs, engins de carrière, groupes électrogènes.
 
 ### 3d. Hydrauliques
 « L'eau, notre métier d'origine. »
-Forages d'eau, pompes immergées, pompes de relevage (vide-cave), surpresseurs avec réservoir, accessoires et tuyauterie.
+Machines de forage, pompes à boues, pompes solaires, pompes immergées hybrides (AC/DC), pompes avec flotteur, surpresseurs avec réservoir, accessoires et tuyauterie.
 Chaque sous-page : bannière, liste des produits en cartes, galerie filtrable, bouton « Demander un devis ».
 
 ## 4. À propos

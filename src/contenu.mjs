@@ -37,7 +37,7 @@ export const DIAPORAMA = [
   {
     court: 'Hydraulique', tag: 'Hydraulique & forages',
     titre: "L'eau, là où vous en avez besoin",
-    texte: "Forages, pompes immergées et surpresseurs pour les ménages, les exploitations et les industries.",
+    texte: "Machines de forage, pompes à boues, pompes solaires et surpresseurs pour les ménages, les exploitations et les industries.",
     bouton: 'Solutions hydrauliques', lien: 'equipements-hydrauliques.html',
     image: 'images/hydrauliques/camions-foreuses-forage-eau.jpeg', alt: "Camions foreuses pour forage d'eau à Ouagadougou"
   },
@@ -58,7 +58,7 @@ export const DIAPORAMA = [
   {
     court: 'Solaire', tag: 'Énergie solaire',
     titre: "L'énergie du soleil, jour et nuit",
-    texte: "Panneaux, batteries, onduleurs et pompes solaires pour une électricité sans coupure.",
+    texte: "Panneaux solaires, batteries lithium et onduleurs pour une électricité sans coupure.",
     bouton: 'Solutions solaires', lien: 'equipements-solaires.html',
     image: 'images/solaires/installation-panneaux-solaires-batteries.jpeg', alt: 'Installation de panneaux solaires avec batteries de stockage'
   },
@@ -100,18 +100,21 @@ export const DOMAINES = [
     nom: 'Solaires',
     page: 'equipements-solaires.html',
     seoTitre: 'Équipements solaires à Ouagadougou | Faso Équipement Paalga',
-    seoDescription: "Installations solaires avec batteries, pompes solaires immergées et groupes électrogènes à Ouagadougou. Étude, fourniture et installation.",
+    seoDescription: "Panneaux solaires, batteries lithium et installations solaires complètes à Ouagadougou. Étude, fourniture et installation.",
     accroche: 'Produisez votre propre énergie, sans coupure',
-    resume: 'Panneaux, batteries, onduleurs, pompes solaires.',
+    resume: 'Panneaux, batteries lithium, onduleurs.',
     banniere: 'images/solaires/installation-panneaux-solaires-batteries.jpeg',
     image: 'images/solaires/installation-panneaux-solaires-batteries.jpeg',
     alt: 'Panneaux solaires et batteries de stockage sous abri',
     intro: "Le soleil est la ressource la plus abondante du Burkina Faso. Nous concevons et installons des systèmes solaires complets, avec stockage, pour alimenter votre maison, votre commerce, votre exploitation ou votre forage, et réduire durablement vos factures et vos coupures.",
-    points: ['Étude de vos besoins en énergie', 'Installation par nos techniciens', 'Batteries de stockage longue durée', 'Pompage solaire sans carburant'],
+    points: ['Étude de vos besoins en énergie', 'Installation par nos techniciens', 'Batteries lithium longue durée', 'Électricité sans carburant'],
+    // Photos « panneaux » et « batteries » : Unsplash (licence Unsplash, usage commercial libre)
+    // https://unsplash.com/photos/solar-panels-on-green-field-513dBrMJ_5w
+    // https://unsplash.com/photos/wall-mounted-solar-power-and-energy-storage-system-7WzD2mTRWK8
     produits: [
       { nom: 'Installations solaires avec stockage', image: 'images/solaires/installation-panneaux-solaires-batteries.jpeg', alt: 'Installation solaire avec onduleur et quatre batteries', texte: "Panneaux, onduleur et batteries dimensionnés selon votre consommation, pour une électricité disponible jour et nuit." },
-      { nom: 'Pompes solaires immergées', image: 'images/solaires/pompes-solaires-immergees-hybrides.jpeg', alt: 'Trois pompes solaires immergées hybrides AC/DC en inox', texte: "Pompes hybrides AC/DC à moteur sans balais : elles fonctionnent sur panneaux solaires comme sur le réseau électrique." },
-      { nom: 'Groupes électrogènes', image: 'images/auto/groupe-electrogene-diesel.jpeg', alt: 'Groupe électrogène diesel bleu', texte: "Groupes diesel en complément de votre installation solaire, pour une alimentation de secours toujours prête." }
+      { nom: 'Panneaux solaires', image: 'images/solaires/panneaux-solaires-champ.jpeg', alt: 'Rangée de panneaux solaires photovoltaïques en plein champ', texte: "Panneaux photovoltaïques performants pour toitures, abris ou centrales au sol, adaptés au fort ensoleillement du Burkina Faso." },
+      { nom: 'Batteries lithium', image: 'images/solaires/batteries-lithium-onduleur-mural.jpeg', alt: 'Batteries lithium murales reliées à un onduleur', texte: "Batteries lithium compactes et sans entretien : plus de cycles, une recharge rapide et une longue durée de vie." }
     ]
   },
   {
@@ -119,9 +122,9 @@ export const DOMAINES = [
     nom: 'Miniers',
     page: 'equipements-miniers.html',
     seoTitre: 'Équipements miniers et concasseurs | Faso Équipement Paalga',
-    seoDescription: "Concasseurs à mâchoires, concasseurs mobiles, broyeurs à boulets et engins de carrière pour l'exploitation minière au Burkina Faso.",
+    seoDescription: "Concasseurs à mâchoires, concasseurs mobiles, broyeurs à boulets, engins de carrière et groupes électrogènes pour l'exploitation minière au Burkina Faso.",
     accroche: 'Du matériel taillé pour les conditions les plus exigeantes',
-    resume: 'Concasseurs, broyeurs, cribles, engins de carrière.',
+    resume: 'Concasseurs, broyeurs, engins de carrière, groupes électrogènes.',
     banniere: 'images/miniers/engins-carriere-camion-pelle-chargeuse-concasseur.jpeg',
     image: 'images/miniers/concasseur-a-machoires-convoyeur.jpeg',
     alt: 'Concasseur à mâchoires sur roues avec tapis convoyeur',
@@ -131,7 +134,8 @@ export const DOMAINES = [
       { nom: 'Concasseurs à mâchoires', image: 'images/miniers/concasseur-a-machoires-convoyeur.jpeg', alt: 'Concasseur à mâchoires avec moteur diesel et convoyeur', texte: "Concasseurs sur roues avec moteur diesel et tapis convoyeur, pour réduire roches et minerais directement sur le site." },
       { nom: 'Concasseurs mobiles avec crible', image: 'images/miniers/concasseur-mobile-crible.jpeg', alt: 'Concasseur mobile avec crible vibrant', texte: "Une seule machine pour concasser et trier les matériaux, facile à déplacer d'un chantier à l'autre." },
       { nom: 'Broyeurs à boulets', image: 'images/miniers/broyeur-a-boulets.jpeg', alt: 'Broyeur à boulets industriel bleu et rouge', texte: "Broyeurs industriels pour réduire le minerai en poudre fine avant le traitement." },
-      { nom: 'Engins de carrière', image: 'images/miniers/engins-carriere-pelle-bulldozer-foreuse.jpeg', alt: 'Pelle hydraulique, bulldozer, foreuse et tombereau sur une mine', texte: "Pelles hydrauliques, bulldozers, chargeuses, foreuses et camions-bennes pour l'extraction et le transport." }
+      { nom: 'Engins de carrière', image: 'images/miniers/engins-carriere-pelle-bulldozer-foreuse.jpeg', alt: 'Pelle hydraulique, bulldozer, foreuse et tombereau sur une mine', texte: "Pelles hydrauliques, bulldozers, chargeuses, foreuses et camions-bennes pour l'extraction et le transport." },
+      { nom: 'Groupes électrogènes', image: 'images/auto/groupe-electrogene-diesel.jpeg', alt: 'Groupe électrogène diesel bleu', texte: "Groupes diesel robustes pour alimenter vos sites miniers, carrières et chantiers isolés du réseau." }
     ]
   },
   {
@@ -139,18 +143,19 @@ export const DOMAINES = [
     nom: 'Hydrauliques',
     page: 'equipements-hydrauliques.html',
     seoTitre: "Forages et pompes à eau à Ouagadougou | Faso Équipement Paalga",
-    seoDescription: "Forages d'eau, pompes immergées, pompes de relevage et surpresseurs à Ouagadougou. Fourniture, installation et dépannage.",
+    seoDescription: "Machines de forage, pompes à boues, pompes solaires, pompes immergées hybrides et surpresseurs à Ouagadougou. Fourniture, installation et dépannage.",
     accroche: "L'eau, notre métier d'origine",
-    resume: 'Forages, pompes immergées, surpresseurs.',
+    resume: 'Forage, pompes à boues, pompes solaires, surpresseurs.',
     banniere: 'images/hydrauliques/camions-foreuses-forage-eau.jpeg',
     image: 'images/hydrauliques/pompes-immergees-grande-capacite.jpeg',
     alt: 'Pompes immergées grande capacité orange et vertes',
-    intro: "Le pompage et l'accès à l'eau sont au cœur de notre activité. Nous réalisons vos forages et fournissons toute la gamme de pompes : immergées pour les forages profonds, de relevage pour vider une fosse, surpresseurs pour garder une bonne pression au robinet. Ménages, villages, exploitations agricoles ou industries : nous trouvons la solution adaptée à votre débit et à votre profondeur.",
+    intro: "Le pompage et l'accès à l'eau sont au cœur de notre activité. Nous réalisons vos forages et fournissons toute la gamme de pompes : solaires ou hybrides pour les forages, à boues pour les eaux chargées, surpresseurs pour garder une bonne pression au robinet. Ménages, villages, exploitations agricoles ou industries : nous trouvons la solution adaptée à votre débit et à votre profondeur.",
     points: ['Forage clé en main', 'Pompes pour toutes profondeurs', 'Accessoires et tuyauterie', 'Installation et dépannage'],
     produits: [
-      { nom: "Forages d'eau", image: 'images/hydrauliques/camions-foreuses-forage-eau.jpeg', alt: "Trois camions foreuses pour forage d'eau", texte: "Nos camions foreuses réalisent votre forage : étude du terrain, forage, équipement du puits et mise en service." },
-      { nom: 'Pompes immergées grande capacité', image: 'images/hydrauliques/pompes-immergees-grande-capacite.jpeg', alt: 'Pompes immergées de grande capacité', texte: "Pour l'irrigation, l'adduction d'eau villageoise et les besoins industriels à fort débit." },
-      { nom: 'Pompes de relevage', image: 'images/hydrauliques/pompes-vide-cave-jaunes.jpeg', alt: 'Quatre pompes de relevage submersibles jaunes', texte: "Pompes submersibles robustes pour évacuer les eaux de fosses, de chantiers ou de puits." },
+      { nom: 'Machines de forage', image: 'images/hydrauliques/camions-foreuses-forage-eau.jpeg', alt: "Trois camions foreuses pour forage d'eau", texte: "Camions foreuses pour la réalisation de forages d'eau : étude du terrain, forage, équipement du puits et mise en service." },
+      { nom: 'Pompes à boues', image: 'images/hydrauliques/pompes-immergees-grande-capacite.jpeg', alt: 'Pompes à boues orange et vertes', texte: "Pompes robustes pour les eaux chargées et les boues : chantiers, mines, fosses et stations de traitement." },
+      { nom: 'Pompes solaires', image: 'images/hydrauliques/pompes-vide-cave-jaunes.jpeg', alt: 'Quatre pompes jaunes', texte: "Pompes alimentées par panneaux solaires pour l'irrigation et l'eau potable, sans carburant ni facture d'électricité." },
+      { nom: 'Pompes immergées hybrides', image: 'images/solaires/pompes-solaires-immergees-hybrides.jpeg', alt: 'Trois pompes immergées hybrides AC/DC en inox', texte: "Pompes hybrides AC/DC à moteur sans balais : elles fonctionnent sur panneaux solaires comme sur le réseau électrique." },
       { nom: 'Pompes avec flotteur', image: 'images/hydrauliques/pompes-vide-cave-flotteur.jpeg', alt: 'Pompes submersibles avec interrupteur à flotteur', texte: "Démarrage et arrêt automatiques grâce à l'interrupteur à flotteur : la pompe ne tourne jamais à sec." },
       { nom: 'Surpresseurs', image: 'images/hydrauliques/surpresseurs-reservoirs.jpeg', alt: 'Surpresseurs avec réservoirs sous pression', texte: "Pompe et réservoir sous pression pour une pression d'eau constante dans la maison ou le bâtiment." },
       { nom: 'Gamme complète et accessoires', image: 'images/hydrauliques/foreuse-gamme-pompes-immergees.jpeg', alt: 'Gamme de pompes immergées devant un camion de forage', texte: "Pompes de forage inox, pompes de surface, tuyaux, câbles et coffrets de commande." }

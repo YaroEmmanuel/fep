@@ -176,8 +176,8 @@
       <p class="mt-4 text-lg font-semibold text-bleu-fonce">Produisez votre propre énergie, sans coupure</p>
       <ul class="mt-6 space-y-2">
         <li class="flex items-center gap-3 text-slate-600"><span class="w-2 h-2 bg-jaune shrink-0" aria-hidden="true"></span>Installations solaires avec stockage</li>
-        <li class="flex items-center gap-3 text-slate-600"><span class="w-2 h-2 bg-jaune shrink-0" aria-hidden="true"></span>Pompes solaires immergées</li>
-        <li class="flex items-center gap-3 text-slate-600"><span class="w-2 h-2 bg-jaune shrink-0" aria-hidden="true"></span>Groupes électrogènes</li>
+        <li class="flex items-center gap-3 text-slate-600"><span class="w-2 h-2 bg-jaune shrink-0" aria-hidden="true"></span>Panneaux solaires</li>
+        <li class="flex items-center gap-3 text-slate-600"><span class="w-2 h-2 bg-jaune shrink-0" aria-hidden="true"></span>Batteries lithium</li>
       </ul>
       <a href="equipements-solaires.html" class="lien-fleche mt-8">Voir les équipements solaires</a>
     </div>
@@ -210,10 +210,10 @@
       <h2 id="titre-hydrauliques" class="text-3xl sm:text-4xl font-extrabold uppercase text-bleu-nuit">Hydrauliques</h2>
       <p class="mt-4 text-lg font-semibold text-bleu-fonce">L'eau, notre métier d'origine</p>
       <ul class="mt-6 space-y-2">
-        <li class="flex items-center gap-3 text-slate-600"><span class="w-2 h-2 bg-jaune shrink-0" aria-hidden="true"></span>Forages d'eau</li>
-        <li class="flex items-center gap-3 text-slate-600"><span class="w-2 h-2 bg-jaune shrink-0" aria-hidden="true"></span>Pompes immergées grande capacité</li>
-        <li class="flex items-center gap-3 text-slate-600"><span class="w-2 h-2 bg-jaune shrink-0" aria-hidden="true"></span>Pompes de relevage</li>
-        <li class="flex items-center gap-3 text-slate-600"><span class="w-2 h-2 bg-jaune shrink-0" aria-hidden="true"></span>Pompes avec flotteur</li>
+        <li class="flex items-center gap-3 text-slate-600"><span class="w-2 h-2 bg-jaune shrink-0" aria-hidden="true"></span>Machines de forage</li>
+        <li class="flex items-center gap-3 text-slate-600"><span class="w-2 h-2 bg-jaune shrink-0" aria-hidden="true"></span>Pompes à boues</li>
+        <li class="flex items-center gap-3 text-slate-600"><span class="w-2 h-2 bg-jaune shrink-0" aria-hidden="true"></span>Pompes solaires</li>
+        <li class="flex items-center gap-3 text-slate-600"><span class="w-2 h-2 bg-jaune shrink-0" aria-hidden="true"></span>Pompes immergées hybrides</li>
       </ul>
       <a href="equipements-hydrauliques.html" class="lien-fleche mt-8">Voir les équipements hydrauliques</a>
     </div>
@@ -234,7 +234,7 @@
   <div class="flex flex-wrap gap-px bg-slate-200 border border-slate-200 w-fit max-w-full" role="group" aria-label="Filtrer la galerie">
     <button type="button" @click="filtre = 'tous'" :aria-pressed="filtre === 'tous'"
       class="px-3 sm:px-5 py-3 text-[11px] sm:text-xs font-bold uppercase tracking-wider transition grow sm:grow-0"
-      :class="filtre === 'tous' ? 'bg-bleu text-white' : 'bg-white text-bleu-nuit hover:bg-slate-50'">Tous <span class="opacity-60">(21)</span></button>
+      :class="filtre === 'tous' ? 'bg-bleu text-white' : 'bg-white text-bleu-nuit hover:bg-slate-50'">Tous <span class="opacity-60">(23)</span></button>
     <button type="button" @click="filtre = 'agricoles'" :aria-pressed="filtre === 'agricoles'"
       class="px-3 sm:px-5 py-3 text-[11px] sm:text-xs font-bold uppercase tracking-wider transition grow sm:grow-0"
       :class="filtre === 'agricoles' ? 'bg-bleu text-white' : 'bg-white text-bleu-nuit hover:bg-slate-50'">Agricoles <span class="opacity-60">(6)</span></button>
@@ -243,10 +243,10 @@
       :class="filtre === 'solaires' ? 'bg-bleu text-white' : 'bg-white text-bleu-nuit hover:bg-slate-50'">Solaires <span class="opacity-60">(3)</span></button>
     <button type="button" @click="filtre = 'miniers'" :aria-pressed="filtre === 'miniers'"
       class="px-3 sm:px-5 py-3 text-[11px] sm:text-xs font-bold uppercase tracking-wider transition grow sm:grow-0"
-      :class="filtre === 'miniers' ? 'bg-bleu text-white' : 'bg-white text-bleu-nuit hover:bg-slate-50'">Miniers <span class="opacity-60">(5)</span></button>
+      :class="filtre === 'miniers' ? 'bg-bleu text-white' : 'bg-white text-bleu-nuit hover:bg-slate-50'">Miniers <span class="opacity-60">(6)</span></button>
     <button type="button" @click="filtre = 'hydrauliques'" :aria-pressed="filtre === 'hydrauliques'"
       class="px-3 sm:px-5 py-3 text-[11px] sm:text-xs font-bold uppercase tracking-wider transition grow sm:grow-0"
-      :class="filtre === 'hydrauliques' ? 'bg-bleu text-white' : 'bg-white text-bleu-nuit hover:bg-slate-50'">Hydrauliques <span class="opacity-60">(7)</span></button>
+      :class="filtre === 'hydrauliques' ? 'bg-bleu text-white' : 'bg-white text-bleu-nuit hover:bg-slate-50'">Hydrauliques <span class="opacity-60">(8)</span></button>
   </div>
   <ul class="mt-8 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-1">
     <li v-show="filtre === 'tous' || filtre === 'agricoles'" data-galerie data-src="images/agricoles/tracteurs-rouges-mini-tracteur-orange.jpeg" data-titre="Tracteurs et mini-tracteurs" data-cat="Agricoles" data-filtre="agricoles">
@@ -312,21 +312,21 @@
         </span>
       </button>
     </li>
-    <li v-show="filtre === 'tous' || filtre === 'solaires'" data-galerie data-src="images/solaires/pompes-solaires-immergees-hybrides.jpeg" data-titre="Pompes solaires immergées" data-cat="Solaires" data-filtre="solaires">
-      <button type="button" @click="ouvrir('images/solaires/pompes-solaires-immergees-hybrides.jpeg')" class="group relative block w-full aspect-square overflow-hidden bg-slate-200 text-left" aria-label="Agrandir la photo : Pompes solaires immergées">
-        <img src="images/solaires/pompes-solaires-immergees-hybrides.jpeg" alt="Pompes solaires immergées" width="1094" height="1280" loading="lazy" decoding="async" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+    <li v-show="filtre === 'tous' || filtre === 'solaires'" data-galerie data-src="images/solaires/panneaux-solaires-champ.jpeg" data-titre="Panneaux solaires" data-cat="Solaires" data-filtre="solaires">
+      <button type="button" @click="ouvrir('images/solaires/panneaux-solaires-champ.jpeg')" class="group relative block w-full aspect-square overflow-hidden bg-slate-200 text-left" aria-label="Agrandir la photo : Panneaux solaires">
+        <img src="images/solaires/panneaux-solaires-champ.jpeg" alt="Panneaux solaires" width="1280" height="852" loading="lazy" decoding="async" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
         <span class="absolute inset-0 flex flex-col justify-end p-3 sm:p-4 bg-gradient-to-t from-bleu-nuit/90 to-transparent opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 transition">
           <span class="text-jaune text-[10px] font-bold uppercase tracking-widest">Solaires</span>
-          <span class="text-white font-semibold text-xs sm:text-sm">Pompes solaires immergées</span>
+          <span class="text-white font-semibold text-xs sm:text-sm">Panneaux solaires</span>
         </span>
       </button>
     </li>
-    <li v-show="filtre === 'tous' || filtre === 'solaires'" data-galerie data-src="images/auto/groupe-electrogene-diesel.jpeg" data-titre="Groupes électrogènes" data-cat="Solaires" data-filtre="solaires">
-      <button type="button" @click="ouvrir('images/auto/groupe-electrogene-diesel.jpeg')" class="group relative block w-full aspect-square overflow-hidden bg-slate-200 text-left" aria-label="Agrandir la photo : Groupes électrogènes">
-        <img src="images/auto/groupe-electrogene-diesel.jpeg" alt="Groupes électrogènes" width="1280" height="960" loading="lazy" decoding="async" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+    <li v-show="filtre === 'tous' || filtre === 'solaires'" data-galerie data-src="images/solaires/batteries-lithium-onduleur-mural.jpeg" data-titre="Batteries lithium" data-cat="Solaires" data-filtre="solaires">
+      <button type="button" @click="ouvrir('images/solaires/batteries-lithium-onduleur-mural.jpeg')" class="group relative block w-full aspect-square overflow-hidden bg-slate-200 text-left" aria-label="Agrandir la photo : Batteries lithium">
+        <img src="images/solaires/batteries-lithium-onduleur-mural.jpeg" alt="Batteries lithium" width="1280" height="960" loading="lazy" decoding="async" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
         <span class="absolute inset-0 flex flex-col justify-end p-3 sm:p-4 bg-gradient-to-t from-bleu-nuit/90 to-transparent opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 transition">
           <span class="text-jaune text-[10px] font-bold uppercase tracking-widest">Solaires</span>
-          <span class="text-white font-semibold text-xs sm:text-sm">Groupes électrogènes</span>
+          <span class="text-white font-semibold text-xs sm:text-sm">Batteries lithium</span>
         </span>
       </button>
     </li>
@@ -366,30 +366,48 @@
         </span>
       </button>
     </li>
-    <li v-show="filtre === 'tous' || filtre === 'hydrauliques'" data-galerie data-src="images/hydrauliques/camions-foreuses-forage-eau.jpeg" data-titre="Forages d'eau" data-cat="Hydrauliques" data-filtre="hydrauliques">
-      <button type="button" @click="ouvrir('images/hydrauliques/camions-foreuses-forage-eau.jpeg')" class="group relative block w-full aspect-square overflow-hidden bg-slate-200 text-left" aria-label="Agrandir la photo : Forages d'eau">
-        <img src="images/hydrauliques/camions-foreuses-forage-eau.jpeg" alt="Forages d'eau" width="1174" height="1280" loading="lazy" decoding="async" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+    <li v-show="filtre === 'tous' || filtre === 'miniers'" data-galerie data-src="images/auto/groupe-electrogene-diesel.jpeg" data-titre="Groupes électrogènes" data-cat="Miniers" data-filtre="miniers">
+      <button type="button" @click="ouvrir('images/auto/groupe-electrogene-diesel.jpeg')" class="group relative block w-full aspect-square overflow-hidden bg-slate-200 text-left" aria-label="Agrandir la photo : Groupes électrogènes">
+        <img src="images/auto/groupe-electrogene-diesel.jpeg" alt="Groupes électrogènes" width="1280" height="960" loading="lazy" decoding="async" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
         <span class="absolute inset-0 flex flex-col justify-end p-3 sm:p-4 bg-gradient-to-t from-bleu-nuit/90 to-transparent opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 transition">
-          <span class="text-jaune text-[10px] font-bold uppercase tracking-widest">Hydrauliques</span>
-          <span class="text-white font-semibold text-xs sm:text-sm">Forages d'eau</span>
+          <span class="text-jaune text-[10px] font-bold uppercase tracking-widest">Miniers</span>
+          <span class="text-white font-semibold text-xs sm:text-sm">Groupes électrogènes</span>
         </span>
       </button>
     </li>
-    <li v-show="filtre === 'tous' || filtre === 'hydrauliques'" data-galerie data-src="images/hydrauliques/pompes-immergees-grande-capacite.jpeg" data-titre="Pompes immergées grande capacité" data-cat="Hydrauliques" data-filtre="hydrauliques">
-      <button type="button" @click="ouvrir('images/hydrauliques/pompes-immergees-grande-capacite.jpeg')" class="group relative block w-full aspect-square overflow-hidden bg-slate-200 text-left" aria-label="Agrandir la photo : Pompes immergées grande capacité">
-        <img src="images/hydrauliques/pompes-immergees-grande-capacite.jpeg" alt="Pompes immergées grande capacité" width="1131" height="1280" loading="lazy" decoding="async" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+    <li v-show="filtre === 'tous' || filtre === 'hydrauliques'" data-galerie data-src="images/hydrauliques/camions-foreuses-forage-eau.jpeg" data-titre="Machines de forage" data-cat="Hydrauliques" data-filtre="hydrauliques">
+      <button type="button" @click="ouvrir('images/hydrauliques/camions-foreuses-forage-eau.jpeg')" class="group relative block w-full aspect-square overflow-hidden bg-slate-200 text-left" aria-label="Agrandir la photo : Machines de forage">
+        <img src="images/hydrauliques/camions-foreuses-forage-eau.jpeg" alt="Machines de forage" width="1174" height="1280" loading="lazy" decoding="async" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
         <span class="absolute inset-0 flex flex-col justify-end p-3 sm:p-4 bg-gradient-to-t from-bleu-nuit/90 to-transparent opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 transition">
           <span class="text-jaune text-[10px] font-bold uppercase tracking-widest">Hydrauliques</span>
-          <span class="text-white font-semibold text-xs sm:text-sm">Pompes immergées grande capacité</span>
+          <span class="text-white font-semibold text-xs sm:text-sm">Machines de forage</span>
         </span>
       </button>
     </li>
-    <li v-show="filtre === 'tous' || filtre === 'hydrauliques'" data-galerie data-src="images/hydrauliques/pompes-vide-cave-jaunes.jpeg" data-titre="Pompes de relevage" data-cat="Hydrauliques" data-filtre="hydrauliques">
-      <button type="button" @click="ouvrir('images/hydrauliques/pompes-vide-cave-jaunes.jpeg')" class="group relative block w-full aspect-square overflow-hidden bg-slate-200 text-left" aria-label="Agrandir la photo : Pompes de relevage">
-        <img src="images/hydrauliques/pompes-vide-cave-jaunes.jpeg" alt="Pompes de relevage" width="1093" height="1280" loading="lazy" decoding="async" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+    <li v-show="filtre === 'tous' || filtre === 'hydrauliques'" data-galerie data-src="images/hydrauliques/pompes-immergees-grande-capacite.jpeg" data-titre="Pompes à boues" data-cat="Hydrauliques" data-filtre="hydrauliques">
+      <button type="button" @click="ouvrir('images/hydrauliques/pompes-immergees-grande-capacite.jpeg')" class="group relative block w-full aspect-square overflow-hidden bg-slate-200 text-left" aria-label="Agrandir la photo : Pompes à boues">
+        <img src="images/hydrauliques/pompes-immergees-grande-capacite.jpeg" alt="Pompes à boues" width="1131" height="1280" loading="lazy" decoding="async" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
         <span class="absolute inset-0 flex flex-col justify-end p-3 sm:p-4 bg-gradient-to-t from-bleu-nuit/90 to-transparent opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 transition">
           <span class="text-jaune text-[10px] font-bold uppercase tracking-widest">Hydrauliques</span>
-          <span class="text-white font-semibold text-xs sm:text-sm">Pompes de relevage</span>
+          <span class="text-white font-semibold text-xs sm:text-sm">Pompes à boues</span>
+        </span>
+      </button>
+    </li>
+    <li v-show="filtre === 'tous' || filtre === 'hydrauliques'" data-galerie data-src="images/hydrauliques/pompes-vide-cave-jaunes.jpeg" data-titre="Pompes solaires" data-cat="Hydrauliques" data-filtre="hydrauliques">
+      <button type="button" @click="ouvrir('images/hydrauliques/pompes-vide-cave-jaunes.jpeg')" class="group relative block w-full aspect-square overflow-hidden bg-slate-200 text-left" aria-label="Agrandir la photo : Pompes solaires">
+        <img src="images/hydrauliques/pompes-vide-cave-jaunes.jpeg" alt="Pompes solaires" width="1093" height="1280" loading="lazy" decoding="async" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+        <span class="absolute inset-0 flex flex-col justify-end p-3 sm:p-4 bg-gradient-to-t from-bleu-nuit/90 to-transparent opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 transition">
+          <span class="text-jaune text-[10px] font-bold uppercase tracking-widest">Hydrauliques</span>
+          <span class="text-white font-semibold text-xs sm:text-sm">Pompes solaires</span>
+        </span>
+      </button>
+    </li>
+    <li v-show="filtre === 'tous' || filtre === 'hydrauliques'" data-galerie data-src="images/solaires/pompes-solaires-immergees-hybrides.jpeg" data-titre="Pompes immergées hybrides" data-cat="Hydrauliques" data-filtre="hydrauliques">
+      <button type="button" @click="ouvrir('images/solaires/pompes-solaires-immergees-hybrides.jpeg')" class="group relative block w-full aspect-square overflow-hidden bg-slate-200 text-left" aria-label="Agrandir la photo : Pompes immergées hybrides">
+        <img src="images/solaires/pompes-solaires-immergees-hybrides.jpeg" alt="Pompes immergées hybrides" width="1094" height="1280" loading="lazy" decoding="async" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+        <span class="absolute inset-0 flex flex-col justify-end p-3 sm:p-4 bg-gradient-to-t from-bleu-nuit/90 to-transparent opacity-0 group-hover:opacity-100 group-focus-visible:opacity-100 transition">
+          <span class="text-jaune text-[10px] font-bold uppercase tracking-widest">Hydrauliques</span>
+          <span class="text-white font-semibold text-xs sm:text-sm">Pompes immergées hybrides</span>
         </span>
       </button>
     </li>
