@@ -604,8 +604,8 @@ const servicesAuto = [
 ];
 pages.push({
   fichier: 'vehicules.html',
-  titre: 'SUV neufs Jetour à Ouagadougou | FEP Auto',
-  description: "FEP Auto, le showroom automobile de Faso Équipement Paalga à Larlé, Ouagadougou : SUV neufs Jetour (T8, Dashing) et autres modèles. Essai sur rendez-vous.",
+  titre: 'SUV neufs Jetour et Changan à Ouagadougou | FEP Auto',
+  description: "FEP Auto, le showroom automobile de Faso Équipement Paalga à Larlé, Ouagadougou : SUV neufs Jetour (T2, Dashing), Changan et autres modèles. Essai sur rendez-vous.",
   actif: 'vehicules',
   image: 'images/auto/fep-auto-showroom-suv-2.jpeg',
   jsonld: [jsonldAriane([{ nom: 'Véhicules' }])],
@@ -657,8 +657,9 @@ ${intro({
     ${enTeteSection({ id: 'titre-galerie', surtitre: 'Galerie', titre: 'FEP Auto en images' })}
     <div class="mt-8 sm:mt-10">${galerie([
       { cat: 'vehicules', image: 'images/auto/fep-auto-showroom-suv-1.jpeg', titre: 'SUV neufs devant le showroom' },
-      { cat: 'vehicules', image: 'images/auto/fep-auto-jetour-t8.jpeg', titre: 'Jetour T8' },
+      { cat: 'vehicules', image: 'images/auto/fep-auto-jetour-t2.jpeg', titre: 'Jetour T2' },
       { cat: 'vehicules', image: 'images/auto/fep-auto-jetour-dashing.jpeg', titre: 'Jetour Dashing' },
+      { cat: 'vehicules', image: 'images/auto/fep-auto-changan-suv.jpeg', titre: 'Changan' },
       { cat: 'vehicules', image: 'images/auto/fep-auto-jetour-interieur.jpeg', titre: 'Dans le showroom' }
     ])}</div>
   </div>
@@ -735,7 +736,7 @@ ${intro({
     <div class="mt-10 sm:mt-12 grid md:grid-cols-2 gap-6">
       ${[
         { nom: 'FEP Pompes & Accessoires', texte: 'Pompes, pièces et accessoires hydrauliques.', image: 'images/auto/devanture-boutique-pompes-accessoires.jpeg', alt: 'Boutique FEP Pompes et Accessoires' },
-        { nom: 'FEP Auto', texte: 'Showroom de véhicules neufs.', image: 'images/auto/fep-auto-jetour-t8.jpeg', alt: 'Showroom FEP Auto avec un SUV Jetour T8' }
+        { nom: 'FEP Auto', texte: 'Showroom de véhicules neufs.', image: 'images/auto/fep-auto-jetour-t2.jpeg', alt: 'Showroom FEP Auto avec un SUV Jetour T2' }
       ].map(e => `<figure class="group" v-reveal>
         <div class="aspect-[4/3] overflow-hidden bg-slate-100">${img(e.image, e.alt, 'w-full h-full object-cover transition duration-700 group-hover:scale-105')}</div>
         <figcaption class="mt-4 border-l-4 border-jaune pl-4">

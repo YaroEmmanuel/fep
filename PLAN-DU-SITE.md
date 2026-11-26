@@ -107,7 +107,7 @@ Concasseurs à mâchoires, concasseurs mobiles avec crible, broyeurs à boulets,
 
 ### 3d. Hydrauliques
 « L'eau, notre métier d'origine. »
-Machines de forage, pompes à boues, pompes solaires, pompes immergées hybrides (AC/DC), pompes avec flotteur, surpresseurs avec réservoir, accessoires et tuyauterie.
+Machines de forage, pompes à boues, pompes solaires, pompes immergées hybrides (AC/DC), pompes électriques, surpresseurs avec réservoir, accessoires et tuyauterie.
 Chaque sous-page : bannière, liste des produits en cartes, galerie filtrable, bouton « Demander un devis ».
 
 ## 4. À propos

@@ -67,7 +67,7 @@ export const DIAPORAMA = [
     titre: 'Roulez en confiance',
     texte: "Des SUV neufs, modernes et confortables, disponibles dans notre showroom.",
     bouton: 'Voir les véhicules', lien: 'vehicules.html',
-    image: 'images/auto/fep-auto-showroom-suv-2.jpeg', alt: 'SUV neufs Jetour devant le showroom FEP Auto'
+    image: 'images/auto/fep-auto-showroom-suv-2.jpeg', alt: 'SUV neufs Jetour et Changan devant le showroom FEP Auto'
   }
 ];
 
@@ -92,7 +92,7 @@ export const DOMAINES = [
       { nom: 'Motoculteur à chenilles', image: 'images/agricoles/motoculteur-chenilles-charrue-rouge.jpeg', alt: 'Motoculteur rouge à chenilles équipé d\'une charrue', texte: "Équipé d'une charrue, il garde une excellente adhérence sur les terrains lourds, humides ou en pente." },
       { nom: 'Semoirs', image: 'images/agricoles/tracteur-semoir-champ.jpeg', alt: 'Semoir en ligne attelé à un tracteur', texte: "Semoirs en ligne attelés pour un semis régulier, rapide et économe en semences." },
       { nom: 'Égreneuses à maïs', image: 'images/agricoles/egreneuse-mais-moteur-essence.jpeg', alt: 'Égreneuse à maïs orange avec moteur essence', texte: "Égreneuses motorisées pour séparer rapidement les grains de maïs après la récolte." },
-      { nom: 'Remorques et accessoires', image: 'images/agricoles/tracteur-motoculteurs-remorque-champ.jpeg', alt: 'Remorque agricole, pulvériseur à disques et motoculteurs', texte: "Remorques agricoles, pulvériseurs à disques et accessoires pour compléter votre équipement." }
+      { nom: 'Tracteur, motoculteurs et accessoires', image: 'images/agricoles/tracteur-motoculteurs-remorque-champ.jpeg', alt: 'Tracteur rouge, motoculteurs avec roues-cages, pulvériseur à disques et remorque agricole', texte: "Tracteur compact, motoculteurs avec roues-cages, pulvériseur à disques et remorque : un équipement complet pour travailler le sol et transporter vos récoltes." }
     ]
   },
   {
@@ -157,7 +157,7 @@ export const DOMAINES = [
       { nom: 'Pompes à boues', image: 'images/hydrauliques/pompes-immergees-grande-capacite.jpeg', alt: 'Pompes à boues orange et vertes', texte: "Pompes robustes pour les eaux chargées et les boues : chantiers, mines, fosses et stations de traitement." },
       { nom: 'Pompes solaires', image: 'images/hydrauliques/pompes-vide-cave-jaunes.jpeg', alt: 'Quatre pompes jaunes', texte: "Pompes alimentées par panneaux solaires pour l'irrigation et l'eau potable, sans carburant ni facture d'électricité." },
       { nom: 'Pompes immergées hybrides', image: 'images/solaires/pompes-solaires-immergees-hybrides.jpeg', alt: 'Trois pompes immergées hybrides AC/DC en inox', texte: "Pompes hybrides AC/DC à moteur sans balais : elles fonctionnent sur panneaux solaires comme sur le réseau électrique." },
-      { nom: 'Pompes avec flotteur', image: 'images/hydrauliques/pompes-vide-cave-flotteur.jpeg', alt: 'Pompes submersibles avec interrupteur à flotteur', texte: "Démarrage et arrêt automatiques grâce à l'interrupteur à flotteur : la pompe ne tourne jamais à sec." },
+      { nom: 'Pompes électriques', image: 'images/hydrauliques/pompes-vide-cave-flotteur.jpeg', alt: 'Deux pompes électriques submersibles, grise et verte', texte: "Pompes submersibles électriques pour vider fosses, caves et réservoirs ou alimenter l'arrosage, avec interrupteur à flotteur pour un fonctionnement automatique." },
       { nom: 'Surpresseurs', image: 'images/hydrauliques/surpresseurs-reservoirs.jpeg', alt: 'Surpresseurs avec réservoirs sous pression', texte: "Pompe et réservoir sous pression pour une pression d'eau constante dans la maison ou le bâtiment." },
       { nom: 'Gamme complète et accessoires', image: 'images/hydrauliques/foreuse-gamme-pompes-immergees.jpeg', alt: 'Gamme de pompes immergées devant un camion de forage', texte: "Pompes de forage inox, pompes de surface, tuyaux, câbles et coffrets de commande." }
     ]
@@ -166,8 +166,8 @@ export const DOMAINES = [
 
 // ---------- Véhicules ----------
 export const VEHICULES = [
-  { nom: 'Jetour T8', image: 'images/auto/fep-auto-jetour-t8.jpeg', alt: 'SUV Jetour T8 devant le showroom FEP Auto', texte: "Un grand SUV au style baroudeur, spacieux et confortable, à l'aise en ville comme sur les pistes." },
+  { nom: 'Jetour T2', image: 'images/auto/fep-auto-jetour-t2.jpeg', alt: 'SUV Jetour T2 blanc devant le showroom FEP Auto', texte: "Un SUV tout-terrain au style baroudeur, robuste et spacieux, à l'aise en ville comme sur les pistes." },
   { nom: 'Jetour Dashing', image: 'images/auto/fep-auto-jetour-dashing.jpeg', alt: 'SUV Jetour Dashing bleu clair', texte: "Un SUV au design sportif et moderne, bien équipé en technologies et en aides à la conduite." },
-  { nom: 'Gamme Jetour', image: 'images/auto/fep-auto-jetour-interieur.jpeg', alt: 'Véhicule Jetour blanc dans le showroom', texte: "D'autres modèles Jetour sont à découvrir dans notre showroom. Demandez la liste des véhicules disponibles." },
-  { nom: 'SUV disponibles en showroom', image: 'images/auto/fep-auto-showroom-suv-1.jpeg', alt: 'Quatre SUV neufs alignés devant le showroom', texte: "Plusieurs SUV neufs de différentes marques et couleurs, prêts à être livrés." }
+  { nom: 'Changan', image: 'images/auto/fep-auto-changan-suv.jpeg', alt: 'SUV Changan gris argent devant le showroom FEP Auto', texte: "Des SUV Changan élégants et bien finis, confortables et généreusement équipés pour la famille comme pour le travail." },
+  { nom: 'Gammes Jetour et Changan', image: 'images/auto/fep-auto-jetour-interieur.jpeg', alt: 'Véhicule Jetour blanc dans le showroom', texte: "D'autres modèles Jetour et Changan sont à découvrir dans notre showroom. Demandez la liste des véhicules disponibles." }
 ];
