@@ -92,7 +92,9 @@ export const DOMAINES = [
       { nom: 'Motoculteur à chenilles', image: 'images/agricoles/motoculteur-chenilles-charrue-rouge.jpeg', alt: 'Motoculteur rouge à chenilles équipé d\'une charrue', texte: "Équipé d'une charrue, il garde une excellente adhérence sur les terrains lourds, humides ou en pente." },
       { nom: 'Semoirs', image: 'images/agricoles/tracteur-semoir-champ.jpeg', alt: 'Semoir en ligne attelé à un tracteur', texte: "Semoirs en ligne attelés pour un semis régulier, rapide et économe en semences." },
       { nom: 'Égreneuses à maïs', image: 'images/agricoles/egreneuse-mais-moteur-essence.jpeg', alt: 'Égreneuse à maïs orange avec moteur essence', texte: "Égreneuses motorisées pour séparer rapidement les grains de maïs après la récolte." },
-      { nom: 'Tracteur, motoculteurs et accessoires', image: 'images/agricoles/tracteur-motoculteurs-remorque-champ.jpeg', alt: 'Tracteur rouge, motoculteurs avec roues-cages, pulvériseur à disques et remorque agricole', texte: "Tracteur compact, motoculteurs avec roues-cages, pulvériseur à disques et remorque : un équipement complet pour travailler le sol et transporter vos récoltes." }
+      { nom: 'Tracteur, motoculteurs et accessoires', image: 'images/agricoles/tracteur-motoculteurs-remorque-champ.jpeg', alt: 'Tracteur rouge, motoculteurs avec roues-cages, pulvériseur à disques et remorque agricole', texte: "Tracteur compact, motoculteurs avec roues-cages, pulvériseur à disques et remorque : un équipement complet pour travailler le sol et transporter vos récoltes." },
+      { nom: 'Remorques et accessoires', image: 'images/agricoles/remorque-agricole-benne-10t.jpeg', alt: 'Remorque agricole benne à deux essieux, verte et rouge', banque: true, texte: "Remorques agricoles et bennes basculantes pour tracteurs et motoculteurs, pulvériseurs à disques, roues-cages, charrues et autres accessoires pour compléter votre équipement.",
+        credit: { texte: 'Photo : MarcelX42, CC BY-SA 4.0', lien: 'https://commons.wikimedia.org/wiki/File:Axon_10t_Agritechnica_2025_(DSC05420).jpg' } }
     ]
   },
   {
@@ -126,7 +128,7 @@ export const DOMAINES = [
     seoDescription: "Concasseurs à mâchoires, concasseurs mobiles, broyeurs à boulets, engins de carrière et groupes électrogènes pour l'exploitation minière au Burkina Faso.",
     accroche: 'Du matériel taillé pour les conditions les plus exigeantes',
     resume: 'Concasseurs, broyeurs, engins de carrière, groupes électrogènes.',
-    banniere: 'images/miniers/engins-carriere-camion-pelle-chargeuse-concasseur.jpeg',
+    banniere: 'images/miniers/concasseur-a-machoires-convoyeur.jpeg',
     image: 'images/miniers/concasseur-a-machoires-convoyeur.jpeg',
     alt: 'Concasseur à mâchoires sur roues avec tapis convoyeur',
     intro: "Exploitation minière, carrière ou production de granulats : nous fournissons des équipements robustes pour extraire, concasser, broyer et trier. Du concasseur mobile pour les petites exploitations aux broyeurs industriels, nous vous accompagnons dans le choix et la mise en service partout au Burkina Faso.",
@@ -147,7 +149,7 @@ export const DOMAINES = [
     seoDescription: "Machines de forage, pompes à boues, pompes solaires, pompes immergées hybrides et surpresseurs à Ouagadougou. Fourniture, installation et dépannage.",
     accroche: "L'eau, notre métier d'origine",
     resume: 'Forage, pompes à boues, pompes solaires, surpresseurs.',
-    banniere: 'images/hydrauliques/camions-foreuses-forage-eau.jpeg',
+    banniere: 'images/hydrauliques/foreuse-gamme-pompes-immergees.jpeg',
     image: 'images/hydrauliques/pompes-immergees-grande-capacite.jpeg',
     alt: 'Pompes immergées grande capacité orange et vertes',
     intro: "Le pompage et l'accès à l'eau sont au cœur de notre activité. Nous réalisons vos forages et fournissons toute la gamme de pompes : solaires ou hybrides pour les forages, à boues pour les eaux chargées, surpresseurs pour garder une bonne pression au robinet. Ménages, villages, exploitations agricoles ou industries : nous trouvons la solution adaptée à votre débit et à votre profondeur.",
@@ -168,6 +170,6 @@ export const DOMAINES = [
 export const VEHICULES = [
   { nom: 'Jetour T2', image: 'images/auto/fep-auto-jetour-t2.jpeg', alt: 'SUV Jetour T2 blanc devant le showroom FEP Auto', texte: "Un SUV tout-terrain au style baroudeur, robuste et spacieux, à l'aise en ville comme sur les pistes." },
   { nom: 'Jetour Dashing', image: 'images/auto/fep-auto-jetour-dashing.jpeg', alt: 'SUV Jetour Dashing bleu clair', texte: "Un SUV au design sportif et moderne, bien équipé en technologies et en aides à la conduite." },
-  { nom: 'Changan', image: 'images/auto/fep-auto-changan-suv.jpeg', alt: 'SUV Changan gris argent devant le showroom FEP Auto', texte: "Des SUV Changan élégants et bien finis, confortables et généreusement équipés pour la famille comme pour le travail." },
+  { nom: 'Changan', image: 'images/auto/changan-cs75-plus.jpeg', alt: 'SUV Changan CS75 Plus gris argent', banque: true, texte: "Des SUV Changan élégants et bien finis, confortables et généreusement équipés pour la famille comme pour le travail." },
   { nom: 'Gammes Jetour et Changan', image: 'images/auto/fep-auto-jetour-interieur.jpeg', alt: 'Véhicule Jetour blanc dans le showroom', texte: "D'autres modèles Jetour et Changan sont à découvrir dans notre showroom. Demandez la liste des véhicules disponibles." }
 ];
